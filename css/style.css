@@ -5,6 +5,8 @@
     --Verde: #49A09D;
     --Lilás: #5F2C82;
     --branco:#FFFFFF;
+    --vermelho: #D32727;
+    --verde-claro: #4CAF50;
 }
 
 * {
@@ -29,7 +31,7 @@ main {
 section#login {
     background-color: var(--branco);
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -48,9 +50,96 @@ section#login > div#imagem {
     background-size: cover;
     /* background-position: left bottom; */
     display: block;
-
 }
+
 section#login > div#formulario {
     padding: 10px;
     display: block;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #5F2C82;
+}
+
+
+
+/*   Formulário style    */
+form > div.campo {
+    background-color: var(--Lilás);
+    width: 100%;
+    height: 40px;
+    display: block;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+} 
+
+div.campo > span {
+    color: var(--branco);
+    background-color: ;
+    font-size: 2em;
+    width: 35px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: ;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: ;
+    border: 0px;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px 8px;
+    transform: translateY(-30%);
+}
+
+form > input[type=submit] {
+    display: block;
+    background-color: var(--Verde);
+    color: var(--branco);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0px;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #5fceca;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40%;
+    text-decoration: none;
+    color: var(--vermelho);
+    font-weight: bold;
+    padding: 6px 0px;
+    border-radius: 8px;
+    border: 1px solid var(--vermelho);
+}
+
+form > a.botao:hover {
+    border: 1px solid var(--verde-claro);
+    border-radius: 8pxx;
+    padding: 6px 0px;
+    color: var(--verde-claro);
+    transition: .3s;
 }
